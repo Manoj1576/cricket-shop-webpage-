@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products | BluePitch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    🏏 <b>Blue<span style="color:#1e90ff">Pitch</span></b>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html" class="active">Products</a>
+    <a href="offers.html">Offers</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="products">
+  <h2>Cricket Bats</h2>
+  <div id="batGrid" class="product-grid"></div>
+
+  <h2>Cricket Balls</h2>
+  <div id="ballGrid" class="product-grid"></div>
+
+  <h2>Cricket Kits</h2>
+  <div id="kitGrid" class="product-grid"></div>
+</section>
+
+
+<!-- PRODUCT DETAILS MODAL -->
+<div id="detailModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeDetails()">×</span>
+    <h3 id="dName"></h3>
+    <p><b>Brand:</b> <span id="dBrand"></span></p>
+    <p><b>Quality:</b> <span id="dLevel"></span></p>
+    <p><b>Best Pitch:</b> <span id="dPitch"></span></p>
+    <p><b>Price:</b> ₹<span id="dPrice"></span></p>
+    <p id="dDesc"></p>
+  </div>
+</div>
+
+<script src="products.js"></script>
+</body>
+</html>
+
